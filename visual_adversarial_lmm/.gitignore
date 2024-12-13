@@ -1,0 +1,49 @@
+# Python
+__pycache__
+*.pyc
+*.egg-info
+dist
+
+# Log
+*.log
+*.log.*
+
+# Data
+!**/alpaca-data-conversation.json
+
+# Editor
+.idea
+*.swp
+.vscode/
+
+# Other
+.DS_Store
+wandb
+output
+
+checkpoints
+ckpts*
+
+.ipynb_checkpoints
+*.ipynb
+
+# Ignoring all common image formats
+*.pt
+*.pth
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tiff
+*.webp
+*.svg
+*.zip
+
+# Ignoring environment files
+env/
+env1/
+*.env
+*.venv
+*.conda
+*.pyenv
