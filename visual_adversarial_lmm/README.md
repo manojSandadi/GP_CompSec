@@ -22,7 +22,7 @@ Then build the LAVIS requirements by
 cd models/LAVIS
 pip install -e .
 ```
-
+Make Sure that your environment has all the requirements in requirements1.txt
 
 ### Code
 
@@ -60,6 +60,7 @@ By default we save the images under ```datasets/```, generated adversarial image
             --batch_size $batch_size \
             --num_workers $num_workers \
      ```
+     Use generate_or_evaluate_adversarials1 for Semantic,Universal and region_specific attacks
    - The ```model_path``` is the huggingface-like model signature, e.g. ```openai/clip-vit-large-patch14```,  ```blip2_feature_extractor```, ```liuhaotian/llava-v1.5-13b```, or ```blip2_vicuna_instruct```. The ```model-type``` is for selecting the LLM for BLIP models.
    - The image_ext is the format of the image file, as normal image extension (.jpg, .png etc.) or .pt files (adversarial imaes).
    - The ```attack_name``` has to be one defined and exported in attacks/__init__.py. The ```attack_param``` can be one of ['normal', 'strong'], or a string of dictionary of parameters that will be passed to the target attack method.
